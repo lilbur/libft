@@ -6,16 +6,17 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 19:52:34 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/07 18:24:52 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/20 21:23:53 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <ctype.h>
 
 int	ft_isalnum(int ch)
 {
-	while ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122) ||
-			(ch >= 48 && ch <= 57))
-		return (ch);
+	if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') ||
+			(ch >= '0' && ch <= '9'))
+		return (1);
 	return (0);
 }

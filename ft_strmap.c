@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 22:02:57 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/19 06:22:02 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/20 21:29:07 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	sc = ft_strnew(ft_strlen(s));
 	if (sc == NULL)
 		return (NULL);
-	while (sc[i])
+	while (s[i])
 	{
 		sc[i] = f(s[i]);
 		i++;

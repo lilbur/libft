@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 20:13:04 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/02 22:31:50 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/20 21:44:43 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ void	*ft_memalloc(size_t size)
 
 	if (!(mem = malloc(size)))
 		return (NULL);
-	ft_bzero(mem, size);
 	return (mem);
 }

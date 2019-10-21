@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 19:45:20 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/19 05:57:50 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/20 22:11:20 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,13 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	}
 	new->next = NULL;
 	return (new);
+}
+
+int	main ()
+{
+	char *data = "hello, i'm a data";
+	t_list *l = ft_lstnew(data, ft_strlen(data));
+	printf("%s\n", l->content);
+	
+	return (0);
 }

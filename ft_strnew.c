@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 20:20:19 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/13 14:34:39 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/20 21:43:29 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ char	*ft_strnew(size_t size)
 {
 	char	*str;
 
-	if (!(str = malloc(size + 1)))
+	if (!(str = ft_memalloc(size + 1)))
 		return (NULL);
-	bzero(str, size + 1);
 	return (str);
 }

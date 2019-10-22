@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 20:15:37 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/19 05:34:48 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/21 20:42:53 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ char	*ft_strnstr(const char *h, const char *n, size_t len)
 
 	if (ft_strlen(h) < (ft_strlen(n)))
 		return (NULL);
-	if (!*n)
+	if (!n || !*n)
 		return ((char *)h);
 	while (*h && len)
 	{
 		ptr = (char	*)h;
-		while (*h == *n && len > 0)
+		while (*h && *n && *h == *n && len > 0)
 		{
 			h++;
 			n++;

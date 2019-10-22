@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/21 15:09:54 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/18 18:29:30 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/21 15:09:27 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strchr(const char *s, int c)
 	size_t			i;
 	char			*sc;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	sc = (char *)s;
 	len = ft_strlen(s);

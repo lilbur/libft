@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/05 10:38:31 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/19 01:52:43 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/21 18:02:58 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (!s)
 		return (NULL);
-	if (!(fresh = (char *)malloc(sizeof(char) * len + 1)))
+	if (!(fresh = (char *)ft_memalloc(sizeof(char) * len + 1)))
 		return (NULL);
 	while (i < len)
 	{

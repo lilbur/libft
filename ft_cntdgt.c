@@ -18,10 +18,7 @@ int	ft_cntdgt(long n)
 
 	counter = 0;
 	if (n < 0)
-	{
-		counter++;
 		n *= -1;
-	}
 	if (n == 0)
 		counter++;
 	while (n > 0)

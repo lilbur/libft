@@ -6,7 +6,7 @@
 /*   By: tmacias <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 18:04:35 by tmacias           #+#    #+#             */
-/*   Updated: 2019/10/18 18:42:42 by tmacias          ###   ########.fr       */
+/*   Updated: 2019/10/27 18:58:21 by tmacias          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	{
 		if (*haystack == *needle)
 		{
-			if (!strncmp(haystack, needle, needlelen))
+			if (!ft_strncmp(haystack, needle, needlelen))
 				return ((char *)haystack);
 		}
 		haystack++;
